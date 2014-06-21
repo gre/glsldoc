@@ -311,31 +311,31 @@
     {
         "type": "function",
         "name": "min",
-        "usage": "genType min (genType x, genType y) genType min (genType x, float y)",
+        "usage": "genType min (genType x, genType y)",
         "description": "Returns y if y < x, otherwise it returns x"
     },
     {
         "type": "function",
         "name": "max",
-        "usage": "genType max (genType x, genType y) genType max (genType x, float y)",
+        "usage": "genType max (genType x, genType y)",
         "description": "Returns y if x < y, otherwise it returns x."
     },
     {
         "type": "function",
         "name": "clamp",
-        "usage": "genType clamp (genType x, genType minVal,\n genType maxVal) genType clamp (genType x,\n float minVal, float maxVal)",
+        "usage": "genType clamp (genType x, genType minVal, genType maxVal)",
         "description": "Returns min (max (x, minVal), maxVal) Results are undefined if minVal > maxVal."
     },
     {
         "type": "function",
         "name": "mix",
-        "usage": "genType mix (genType x, genType y, genType a)\n genType mix (genType x, genType y,\n float a)",
+        "usage": "genType mix (genType x, genType y, genType a)",
         "description": "Returns the linear blend of x and y, i.e. x*(1−a) + y*a"
     },
     {
         "type": "function",
         "name": "step",
-        "usage": "genType step (genType edge, genType x) genType step (float edge, genType x)",
+        "usage": "genType step (genType edge, genType x) ",
         "description": "Returns 0.0 if x < edge, otherwise it returns 1.0"
     },
     {
@@ -377,7 +377,7 @@
     {
         "type": "function",
         "name": "faceforward",
-        "usage": "genType faceforward(genType N, genType I,\n genType Nref)",
+        "usage": "genType faceforward(genType N, genType I, genType Nref)",
         "description": "If dot(Nref, I) < 0 return N, otherwise return –N."
     },
     {

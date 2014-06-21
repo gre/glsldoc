@@ -1,6 +1,6 @@
 {
   "name": "glsldoc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a JSON-structured documentation of all WebGL GLSL predefined functions, constants, types, qualifiers,...",
   "author": "Gaëtan Renaudeau <renaudeau.gaetan@gmail.com>",
   "main": "export.json",
