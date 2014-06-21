@@ -30,4 +30,4 @@ console.log(Documentation);
 Example
 -------
 
-(used in GLSL.io – link to the code to come)
+https://github.com/glslio/glsl.io/blob/master/client/src/screens/editor/GlslContextualHelp/index.js
