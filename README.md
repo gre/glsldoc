@@ -1,7 +1,7 @@
 glsldoc
 =======
 
-**glsldoc** is a JSON-formatted documentation of all WebGL GLSL predefined functions, constants, types, types, qualifiers,...
+**glsldoc** is a JSON-formatted documentation of all WebGL GLSL predefined functions, constants, types, qualifiers,...
 are documented respectively to the [GLSL ES Specification](http://www.khronos.org/registry/gles/specs/2.0/GLSL_ES_Specification_1.0.17.pdf).
 
 
