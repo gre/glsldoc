@@ -1,9 +1,10 @@
 {
   "name": "glsldoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a JSON-structured documentation of all WebGL GLSL predefined functions, constants, types, qualifiers,...",
   "author": "Gaëtan Renaudeau <renaudeau.gaetan@gmail.com>",
   "main": "export.json",
+  "keywords": ["glsl", "documentation", "json", "structured", "functions", "constants", "types", "qualifiers"],
   "repository": {
     "type": "git",
     "url": "https://github.com/glsl.io/glsldoc"
