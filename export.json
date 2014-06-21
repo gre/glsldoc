@@ -1,0 +1,479 @@
+[
+    {
+        "type": "type",
+        "name": "void",
+        "usage": "void main () {}",
+        "description": "for functions that do not return a value or for an empty parameter list"
+    },
+    {
+        "type": "type",
+        "name": "bool",
+        "usage": "bool b = true;",
+        "description": "a conditional type, taking on values of true or false"
+    },
+    {
+        "type": "type",
+        "name": "int",
+        "usage": "int i = 42;",
+        "description": "a signed integer"
+    },
+    {
+        "type": "type",
+        "name": "float",
+        "usage": "float f = 0.01;",
+        "description": "a single floating-point scalar"
+    },
+    {
+        "type": "type",
+        "name": "vec2",
+        "usage": "vec2 v2 = vec2(1.2, 2.0);",
+        "description": "a two component floating-point vector"
+    },
+    {
+        "type": "type",
+        "name": "vec3",
+        "usage": "vec3 v3 = vec3(1.2, 2.0, 4.);",
+        "description": "a three component floating-point vector"
+    },
+    {
+        "type": "type",
+        "name": "vec4",
+        "usage": "vec4 v4 = vec4(1.2, 2.0, 4., 5.0);",
+        "description": "a four component floating-point vector"
+    },
+    {
+        "type": "type",
+        "name": "bvec2",
+        "usage": "bvec2 bv2 = bvec2(true, false);",
+        "description": "a two component Boolean vector"
+    },
+    {
+        "type": "type",
+        "name": "bvec3",
+        "usage": "bvec3 bv3 = bvec3(true, false, true);",
+        "description": "a three component Boolean vector"
+    },
+    {
+        "type": "type",
+        "name": "bvec4",
+        "usage": "bvec4 bv4 = bvec4(true, false, true, true);",
+        "description": "a four component Boolean vector"
+    },
+    {
+        "type": "type",
+        "name": "ivec2",
+        "usage": "ivec2 iv2 = ivec2(1, 2);",
+        "description": "a two component integer vector"
+    },
+    {
+        "type": "type",
+        "name": "ivec3",
+        "usage": "ivec3 iv3 = ivec3(1, 2, 4);",
+        "description": "a three component integer vector"
+    },
+    {
+        "type": "type",
+        "name": "ivec4",
+        "usage": "ivec4 iv4 = ivec4(1, 2, 4, 5);",
+        "description": "a four component integer vector"
+    },
+    {
+        "type": "type",
+        "name": "mat2",
+        "usage": "mat2 m = mat2(0.0); m[0][0] = 1.0;",
+        "description": "a 2×2 floating-point matrix"
+    },
+    {
+        "type": "type",
+        "name": "mat3",
+        "usage": "mat3 m = mat3(0.0); m[0][0] = 1.0;",
+        "description": "a 3×3 floating-point matrix"
+    },
+    {
+        "type": "type",
+        "name": "mat4",
+        "usage": "mat4 m = mat4(0.0); m[0][0] = 1.0;",
+        "description": "a 4×4 floating-point matrix"
+    },
+    {
+        "type": "type",
+        "name": "sampler2D",
+        "usage": "texture2D(sampler, coord)",
+        "description": "a handle for accessing a 2D texture"
+    },
+    {
+        "type": "type",
+        "name": "samplerCube",
+        "usage": "textureCube(sampler, coord)",
+        "description": "a handle for accessing a cube mapped texture"
+    },
+    {
+        "type": "special_variable",
+        "name": "gl_FragCoord",
+        "usage": "vec4 gl_FragCoord;",
+        "description": "The variable gl_FragCoord is available as a read-only variable from within fragment shaders and it holds the window relative coordinates x, y, z, and 1/w values for the fragment."
+    },
+    {
+        "type": "special_variable",
+        "name": "gl_FragColor",
+        "usage": "vec4 gl_FragColor;",
+        "description": "Writing to gl_FragColor specifies the fragment color that will be used by the subsequent fixed functionality pipeline."
+    },
+    {
+        "type": "qualifier",
+        "name": "const",
+        "usage": "const int everything = 42;",
+        "description": "a compile-time constant, or a function parameter that is read-only"
+    },
+    {
+        "type": "qualifier",
+        "name": "attribute",
+        "usage": "attribute vec3 normal;",
+        "description": "linkage between a vertex shader and OpenGL ES for per-vertex data"
+    },
+    {
+        "type": "qualifier",
+        "name": "uniform",
+        "usage": "uniform vec4 lightPosition;",
+        "description": "value does not change across the primitive being processed, uniforms form the linkage between a shader, OpenGL ES, and the application"
+    },
+    {
+        "type": "qualifier",
+        "name": "varying",
+        "usage": "varying int foo;",
+        "description": "varying linkage between a vertex shader and a fragment shader for interpolated data"
+    },
+    {
+        "type": "precision_qualifier",
+        "name": "highp",
+        "usage": "highp float h;",
+        "description": "Satisfies the minimum requirements for the vertex language described above. Optional in the fragment language."
+    },
+    {
+        "type": "precision_qualifier",
+        "name": "mediump",
+        "usage": "mediump float m;",
+        "description": "Satisfies the minimum requirements above for the fragment language. Its range and precision has to be greater than or the same as provided by lowp and less than or the same as provided by highp."
+    },
+    {
+        "type": "precision_qualifier",
+        "name": "lowp",
+        "usage": "lowp float l;",
+        "description": "Range and precision that can be less than mediump, but still intended to represent all color values for any color channel."
+    },
+    {
+        "type": "parameter_qualifier",
+        "name": "in",
+        "description": "for function parameters passed into a function"
+    },
+    {
+        "type": "parameter_qualifier",
+        "name": "out",
+        "description": "for function parameters passed back out of a function, but not initialized for use when passed in"
+    },
+    {
+        "type": "parameter_qualifier",
+        "name": "inout",
+        "description": "for function parameters passed both into and out of a function"
+    },
+    {
+        "type": "function",
+        "name": "radians",
+        "usage": "genType radians (genType degrees)",
+        "description": "Converts degrees to radians, i.e. (π/180)*degrees"
+    },
+    {
+        "type": "function",
+        "name": "sin",
+        "usage": "genType sin (genType angle)",
+        "description": "The standard trigonometric sine function."
+    },
+    {
+        "type": "function",
+        "name": "cos",
+        "usage": "genType cos (genType angle)",
+        "description": "The standard trigonometric cosine function."
+    },
+    {
+        "type": "function",
+        "name": "tan",
+        "usage": "genType tan (genType angle)",
+        "description": "The standard trigonometric tangent."
+    },
+    {
+        "type": "function",
+        "name": "asin",
+        "usage": "genType asin (genType x)",
+        "description": "Arc sine. Returns an angle whose sine is x. The range of values returned by this function is [−π/2 , π/2]. Results are undefined if ∣x∣ > 1."
+    },
+    {
+        "type": "function",
+        "name": "acos",
+        "usage": "genType acos (genType x)",
+        "description": "Arc cosine. Returns an angle whose cosine is x. The range of values returned by this function is [0, π]. Results are undefined if ∣x∣ > 1."
+    },
+    {
+        "type": "function",
+        "name": "atan",
+        "usage": "genType atan (genType y, genType x)",
+        "description": "Arc tangent. Returns an angle whose tangent is y/x. The signs of x and y are used to determine what quadrant the angle is in. The range of values returned by this function is [−π,π]. Results are undefined if x and y are both 0."
+    },
+    {
+        "type": "function",
+        "name": "atan",
+        "usage": "genType atan (genType y_over_x)",
+        "description": "Arc tangent. Returns an angle whose tangent is y_over_x. The range of values returned by this function is [−π/2,π/2]."
+    },
+    {
+        "type": "function",
+        "name": "pow",
+        "usage": "genType pow (genType x, genType y)",
+        "description": "Returns x raised to the y power, i.e., x^y. Results are undefined if x < 0. Results are undefined if x = 0 and y <= 0."
+    },
+    {
+        "type": "function",
+        "name": "exp",
+        "usage": "genType exp (genType x)",
+        "description": "Returns the natural exponentiation of x, i.e., exp(x)."
+    },
+    {
+        "type": "function",
+        "name": "log",
+        "usage": "genType log (genType x)",
+        "description": "Returns the natural logarithm of x, i.e., returns the value y which satisfies the equation x = exp(y).\n Results are undefined if x <= 0."
+    },
+    {
+        "type": "function",
+        "name": "exp2",
+        "usage": "genType exp2 (genType x)",
+        "description": "Returns 2 raised to the x power, i.e., 2^x"
+    },
+    {
+        "type": "function",
+        "name": "log2",
+        "usage": "genType log2 (genType x)",
+        "description": "Returns the base 2 logarithm of x, i.e., returns the value y which satisfies the equation x=2^y\n Results are undefined if x <= 0."
+    },
+    {
+        "type": "function",
+        "name": "sqrt",
+        "usage": "genType sqrt (genType x)",
+        "description": "Returns square root of x . Results are undefined if x < 0."
+    },
+    {
+        "type": "function",
+        "name": "inversesqrt",
+        "usage": "genType inversesqrt (genType x)",
+        "description": "Returns 1 / sqrt(x) Results are undefined if x <= 0."
+    },
+    {
+        "type": "function",
+        "name": "abs",
+        "usage": "genType abs (genType x)",
+        "description": "Returns x if x >= 0, otherwise it returns –x."
+    },
+    {
+        "type": "function",
+        "name": "sign",
+        "usage": "genType sign (genType x)",
+        "description": "Returns 1.0 if x > 0, 0.0 if x = 0, or –1.0 if x < 0"
+    },
+    {
+        "type": "function",
+        "name": "floor",
+        "usage": "genType floor (genType x)",
+        "description": "Returns a value equal to the nearest integer that is less than or equal to x"
+    },
+    {
+        "type": "function",
+        "name": "ceil",
+        "usage": "genType ceil (genType x)",
+        "description": "Returns a value equal to the nearest integer that is greater than or equal to x"
+    },
+    {
+        "type": "function",
+        "name": "fract",
+        "usage": "genType fract (genType x)",
+        "description": "Returns x – floor (x)"
+    },
+    {
+        "type": "function",
+        "name": "mod",
+        "usage": "genType mod (genType x, float y)",
+        "description": "Modulus (modulo). Returns x – y ∗ floor (x/y)"
+    },
+    {
+        "type": "function",
+        "name": "mod",
+        "usage": "genType mod (genType x, genType y)",
+        "description": "Modulus. Returns x – y ∗ floor (x/y)"
+    },
+    {
+        "type": "function",
+        "name": "min",
+        "usage": "genType min (genType x, genType y) genType min (genType x, float y)",
+        "description": "Returns y if y < x, otherwise it returns x"
+    },
+    {
+        "type": "function",
+        "name": "max",
+        "usage": "genType max (genType x, genType y) genType max (genType x, float y)",
+        "description": "Returns y if x < y, otherwise it returns x."
+    },
+    {
+        "type": "function",
+        "name": "clamp",
+        "usage": "genType clamp (genType x, genType minVal,\n genType maxVal) genType clamp (genType x,\n float minVal, float maxVal)",
+        "description": "Returns min (max (x, minVal), maxVal) Results are undefined if minVal > maxVal."
+    },
+    {
+        "type": "function",
+        "name": "mix",
+        "usage": "genType mix (genType x, genType y, genType a)\n genType mix (genType x, genType y,\n float a)",
+        "description": "Returns the linear blend of x and y, i.e. x*(1−a) + y*a"
+    },
+    {
+        "type": "function",
+        "name": "step",
+        "usage": "genType step (genType edge, genType x) genType step (float edge, genType x)",
+        "description": "Returns 0.0 if x < edge, otherwise it returns 1.0"
+    },
+    {
+        "type": "function",
+        "name": "smoothstep",
+        "usage": "genType smoothstep (genType edge0, genType edge1, genType x)",
+        "description": "Returns 0.0 if x <= edge0 and 1.0 if x >= edge1 and performs smooth Hermite interpolation between 0 and 1 when edge0 < x < edge1. This is useful in cases where you would want a threshold function with a smooth transition. This is equivalent to:\n genType t; t = clamp ((x – edge0) / (edge1 – edge0), 0, 1); return t * t * (3 – 2 * t);\n Results are undefined if edge0 >= edge1."
+    },
+    {
+        "type": "function",
+        "name": "length",
+        "usage": "float length (genType x)",
+        "description": "Returns the length of vector x, i.e., sqrt(x[0]^2+x[1]^2+...)"
+    },
+    {
+        "type": "function",
+        "name": "distance",
+        "usage": "float distance (genType p0, genType p1)",
+        "description": "Returns the distance between p0 and p1, i.e. length (p0 – p1)"
+    },
+    {
+        "type": "function",
+        "name": "dot",
+        "usage": "float dot (genType x, genType y)",
+        "description": "Returns the dot product of x and y, i.e., x[0]⋅y[0]+x[1]⋅y[1]+..."
+    },
+    {
+        "type": "function",
+        "name": "cross",
+        "usage": "vec3 cross (vec3 x, vec3 y)",
+        "description": "Returns the cross product of x and y, i.e. [ x[1]⋅y[2]−y[1]⋅x[2] , x[0]⋅y[1]−y[0]⋅x[1] , x[2]⋅y[0]−y[2]⋅x[0] ]"
+    },
+    {
+        "type": "function",
+        "name": "normalize",
+        "usage": "genType normalize (genType x)",
+        "description": "Returns a vector in the same direction as x but with a length of 1."
+    },
+    {
+        "type": "function",
+        "name": "faceforward",
+        "usage": "genType faceforward(genType N, genType I,\n genType Nref)",
+        "description": "If dot(Nref, I) < 0 return N, otherwise return –N."
+    },
+    {
+        "type": "function",
+        "name": "refect",
+        "usage": "genType reflect (genType I, genType N)",
+        "description": "For the incident vector I and surface orientation N, returns the reflection direction:\n I – 2 ∗ dot(N, I) ∗ N N must already be normalized in order to achieve the desired result."
+    },
+    {
+        "type": "function",
+        "name": "refract",
+        "usage": "genType refract(genType I, genType N, float eta)",
+        "description": "For the incident vector I and surface normal N, and the ratio of indices of refraction eta, return the refraction vector. The result is computed by\n k = 1.0 - eta * eta * (1.0 - dot(N, I) * dot(N, I)) if (k < 0.0)\n return genType(0.0) else\n return eta * I - (eta * dot(N, I) + sqrt(k)) * N\n The input parameters for the incident vector I and the surface normal N must already be normalized to get the desired results."
+    },
+    {
+        "type": "function",
+        "name": "matrixCompMult",
+        "usage": "mat matrixCompMult (mat x, mat y)",
+        "description": "Multiply matrix x by matrix y component-wise, i.e., result[i][j] is the scalar product of x[i][j] and y[i][j].\n Note: to get linear algebraic matrix multiplication, use the multiply operator (*)."
+    },
+    {
+        "type": "function",
+        "name": "lessThan",
+        "usage": "bvec lessThan(vec x, vec y)",
+        "description": "Returns the component-wise compare of x < y."
+    },
+    {
+        "type": "function",
+        "name": "lessThanEqual",
+        "usage": "bvec lessThanEqual(vec x, vec y)",
+        "description": "Returns the component-wise compare of x <= y."
+    },
+    {
+        "type": "function",
+        "name": "greaterThan",
+        "usage": "bvec greaterThan(vec x, vec y)",
+        "description": "Returns the component-wise compare of x > y."
+    },
+    {
+        "type": "function",
+        "name": "greaterThanEqual",
+        "usage": "bvec greaterThanEqual(vec x, vec y)",
+        "description": "Returns the component-wise compare of x >= y."
+    },
+    {
+        "type": "function",
+        "name": "equal",
+        "usage": "bvec equal(vec x, vec y)",
+        "description": "Returns the component-wise compare of x == y.\n Returns the component-wise compare of x != y."
+    },
+    {
+        "type": "function",
+        "name": "any",
+        "usage": "bool any(bvec x)",
+        "description": "Returns true if any component of x is true."
+    },
+    {
+        "type": "function",
+        "name": "all",
+        "usage": "bool all(bvec x)",
+        "description": "Returns true only if all components of x are true."
+    },
+    {
+        "type": "function",
+        "name": "not",
+        "usage": "bvec not(bvec x)",
+        "description": "Returns the component-wise logical complement of x."
+    },
+    {
+        "type": "function",
+        "name": "texture2D",
+        "usage": "vec4 texture2D (sampler2D sampler, vec2 coord)",
+        "description": "Use the texture coordinate coord to do a texture lookup in the 2D texture currently bound to sampler."
+    },
+    {
+        "type": "function",
+        "name": "texture2DProj",
+        "usage": "vec4 texture2DProj (sampler2D sampler, vec3 coord )",
+        "description": "Use the texture coordinate coord to do a texture lookup in the 2D texture currently bound to sampler. For the projective (“Proj”) versions, the texture coordinate (coord.s, coord.t) is divided by the last component of coord. The third component of coord is ignored for the vec4 coord variant."
+    },
+    {
+        "type": "function",
+        "name": "texture2DLod",
+        "usage": "vec4 texture2DLod (sampler2D sampler, vec2 coord, float lod)",
+        "description": "Use the texture coordinate coord to do a texture lookup in the 2D texture currently bound to sampler."
+    },
+    {
+        "type": "function",
+        "name": "texture2DProjLod",
+        "usage": "vec4 texture2DProjLod (sampler2D sampler, vec3 coord, float lod)",
+        "description": "Use the texture coordinate coord to do a texture lookup in the 2D texture currently bound to sampler. For the projective (“Proj”) versions, the texture coordinate (coord.s, coord.t) is divided by the last component of coord. The third component of coord is ignored for the vec4 coord variant."
+    },
+    {
+        "type": "function",
+        "name": "textureCube",
+        "usage": "vec4 textureCube (samplerCube sampler, vec3 coord )",
+        "description": "Use the texture coordinate coord to do a texture lookup in the cube map texture currently bound to sampler. The direction of coord is used to select which face to do a 2- dimensional texture lookup in, as described in section 3.8.6 in version 2.0 of the OpenGL specification."
+    }
+]
